@@ -41,7 +41,7 @@
 
 #+CAPTION: /Le Fils de l'Homme/ 1964 René Magritte
 #+ATTR_LATEX: :align center :width 0.8\textwidth
-[[../img/yo.jpg]]
+[[../../img/yo.jpg]]
 
 ** Acerca del Curso
 *** :BMCOL:
@@ -68,7 +68,7 @@
 
 #+CAPTION: Orbitales del molecular
 #+ATTR_LATEX: :align center :width 0.6\textwidth
-[[../img/qca1.jpg]]
+[[../../img/qca1.jpg]]
 
 ** Evaluaciones Sumativas (con nota)
 *** :BMCOL:
@@ -89,7 +89,7 @@
 
 #+CAPTION: Clorofila y Hemoglobina
 #+ATTR_LATEX: :align center :width 0.7\textwidth
-[[../img/chlorophyl.png]]
+[[../../img/chlorophyl.png]]
 
 ** Trabajo de integración
 *** :BMCOL:
@@ -108,7 +108,7 @@
 
 #+CAPTION: Estructura cuaternaria de las proteínas
 #+ATTR_LATEX: :align center :width 0.7\textwidth
-[[../img/protein.jpg]]
+[[../../img/protein.jpg]]
 
 ** Bibliografía del curso
 *** :BMCOL:
@@ -163,7 +163,7 @@
 ** Ahora preséntese usted...
 
 #+ATTR_LATEX: :align center :height 5cm
-[[../img/uncleSam.jpg]]
+[[../../img/uncleSam.jpg]]
 
 * Configuración electrónica
 ** Historia del átomo y el elemento: Demócrito/Aristóteles
@@ -185,13 +185,13 @@
 #+BEAMER: \only<1-2>{
 #+CAPTION: Demócrito de Abdera 460 a.C. - 370 a.C.
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/democrito.jpg]]
+[[../../img/democrito.jpg]]
 #+BEAMER: }
 
 #+BEAMER: \only<3>{
 #+CAPTION: Aristóteles 384 a.C. - 322 a.C.
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/aristoteles.jpg]]
+[[../../img/aristoteles.jpg]]
 #+BEAMER: }
 
 ** John Dalton y Michael Faraday
@@ -214,19 +214,19 @@
 #+BEAMER: \only<1>{
 #+CAPTION: John Dalton 1766 - 1844
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/dalton.jpg]]
+[[../../img/dalton.jpg]]
 #+BEAMER: }
 
 #+BEAMER: \only<2>{
 #+CAPTION: Teoría Atómica de Dalton
 #+ATTR_LATEX: :align center :height 0.6\textheight
-[[../img/dalton-atomic.jpg]]
+[[../../img/dalton-atomic.jpg]]
 #+BEAMER: }
 
 #+BEAMER: \only<3>{
 #+CAPTION: Machael Faraday 1791 - 1867
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/faraday.jpg]]
+[[../../img/faraday.jpg]]
 #+BEAMER: }
 
 ** J.J. Thomson
@@ -247,19 +247,19 @@
 #+BEAMER: \only<1>{
 #+CAPTION: J.J. Thomson 1856 - 1940
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/thomson.jpg]]
+[[../../img/thomson.jpg]]
 #+BEAMER: }
 
 #+BEAMER: \only<2>{
 #+CAPTION: Máquina de rayos catódicos
 #+ATTR_LATEX: :align center :width 0.7\textwidth
-[[../img/rayoscatodicos.jpg]]
+[[../../img/rayoscatodicos.jpg]]
 #+BEAMER: }
 
 #+BEAMER: \only<3>{
 #+CAPTION: Modelo atómico de Rutherford
 #+ATTR_LATEX: :align center :width 0.6\textwidth
-[[../img/thomsonmodel.jpeg]]
+[[../../img/thomsonmodel.jpeg]]
 #+BEAMER: }
 
 ** Ernest Rutherford
@@ -281,19 +281,19 @@
 #+BEAMER: \only<1>{
 #+CAPTION: Ernest Rutherford 1871 - 1937
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/rutherford.jpg]]
+[[../../img/rutherford.jpg]]
 #+BEAMER: }
 
 #+BEAMER: \only<2>{
 #+CAPTION: Experimento de la lámina de oro.
 #+ATTR_LATEX: :align center :width 0.7\textwidth
-[[../img/goldslide.jpeg]]
+[[../../img/goldslide.jpeg]]
 #+BEAMER: }
 
 #+BEAMER: \only<3>{
 #+CAPTION: Modelo atómico de Thomson
 #+ATTR_LATEX: :align center :width 0.6\textwidth
-[[../img/rutherfordmodel.jpeg]]
+[[../../img/rutherfordmodel.jpeg]]
 #+BEAMER: }
 
 ** El salto a la mecánica cuántica y la pérdida de las esferas duras.
@@ -315,7 +315,7 @@
 #+BEAMER: \only<1>{
 #+CAPTION: Collage, diferentes científicos
 #+ATTR_LATEX: :align center :height 0.6\textheight
-[[../img/proceres.png]]
+[[../../img/proceres.png]]
 #+BEAMER: }
 
 #+BEAMER: \only<2>{
@@ -344,19 +344,19 @@
 #+BEAMER: \only<1>{
 #+CAPTION: Niels Bohr 1885 - 1962
 #+ATTR_LATEX: :align center :height 0.6\textheight
-[[../img/bohr.jpg]]
+[[../../img/bohr.jpg]]
 #+BEAMER: }
 
 #+BEAMER: \only<2>{
 #+CAPTION: Modelo atómico de Bohr.
 #+ATTR_LATEX: :align center :width 0.7\textwidth
-[[../img/bohrmodel.png]]
+[[../../img/bohrmodel.png]]
 #+BEAMER: }
 
 #+BEAMER: \only<3>{
 #+CAPTION: Espectros
 #+ATTR_LATEX: :align center :width 0.7\textwidth
-[[../img/espectro.jpeg]]
+[[../../img/espectro.jpeg]]
 #+BEAMER: }
 
 ** Entonces, ¿Como describimos un átomo?
@@ -407,7 +407,7 @@
 :END:
 
 #+ATTR_BEAMER: :overlay <1-2>
-[[../img/settings.jpeg]]
+[[../../img/settings.jpeg]]
 
 - <3-> Adquiere valores desde $1, 2, 3 ... \infty$
 - <4-> Adquiere valores desde $0, 1, 2 ... n-1$
@@ -445,12 +445,12 @@
 
 #+BEAMER: \only<2->{
 | n | l | m_l | \psi    |
-|---+---+-----+---------|
-| 1 | 0 |   0 | 1s      |
-| 2 | 0 |   0 | 2s      |
-| 2 | 1 |  -1 | 2p_{-1} |
-| 2 | 1 |   0 | 2p_{0}  |
-| 2 | 1 |  +1 | 2p_{+1} |
+|---+---+----+------|
+| 1 | 0 |  0 | 1s   |
+| 2 | 0 |  0 | 2s   |
+| 2 | 1 | -1 | 2p_{-1} |
+| 2 | 1 |  0 | 2p_{0}  |
+| 2 | 1 | +1 | 2p_{+1} |
 
 #+BEAMER:}
 
@@ -473,7 +473,7 @@
 
 #+CAPTION: Diagrama de Moeller
 #+ATTR_LATEX: :align center :width 0.6\textwidth
-[[../img/dmoeller.jpeg]]
+[[../../img/dmoeller.jpeg]]
 
 ** Ejercicios:
 *** Ejercicio 1
@@ -499,7 +499,7 @@ Escriba la configuración electrónica completa y los 4 números cuánticos del 
 #+BEAMER: \only<1>{
 #+CAPTION: J.W. Döbereiner 1780-1849
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/dobereiner.jpeg]]
+[[../../img/dobereiner.jpeg]]
 #+BEAMER: }
 
 #+BEAMER: \only<2>{
@@ -526,13 +526,13 @@ Escriba la configuración electrónica completa y los 4 números cuánticos del 
 #+BEAMER: \only<1>{
 #+CAPTION: J. Newlands, químico inglés 1837 - 1898
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/newlands.jpg]]
+[[../../img/newlands.jpg]]
 #+BEAMER: }
 
 #+BEAMER: \only<2>{
 #+CAPTION: 1864 Publica "On the Law of Octaves"
 #+ATTR_LATEX: :align center :width \textwidth
-[[../img/octavas.jpg]]
+[[../../img/octavas.jpg]]
 #+BEAMER: }
 
 ** Mendeléyev, El padre de la Tabla periódica \cite{Scerri2007}.
@@ -555,13 +555,13 @@ Escriba la configuración electrónica completa y los 4 números cuánticos del 
 #+BEAMER: \only<1>{
 #+CAPTION: D. Mendeléyev (1834 - 1907)
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/mendeleev.jpg]]
+[[../../img/mendeleev.jpg]]
 #+BEAMER:}
 
 #+BEAMER: \only<2>{
 #+CAPTION: La TP propuesta por Mendeléyev, se pueden apreciar diferentes espacios en vacíos.
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/1TP.png]]
+[[../../img/1TP.png]]
 #+BEAMER:}
 
 #+BEAMER: \only<3>{
@@ -594,47 +594,47 @@ Escriba la configuración electrónica completa y los 4 números cuánticos del 
 #+BEAMER: \only<2>{
 #+CAPTION: Espiral de Benfley 1964.
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/benfley.png]]
+[[../../img/benfley.png]]
 #+BEAMER: }
 
 #+BEAMER: \only<3>{
 #+CAPTION: Hidrógeno central de Jeff Morgan.
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/morgan.png]]
+[[../../img/morgan.png]]
 #+BEAMER: }
 
 #+BEAMER: \only<4>{
 #+CAPTION: Capas 3D de Timothy Stowe.
 #+ATTR_LATEX: :align center :width 0.5\textwidth
-[[../img/stowe.png]]
+[[../../img/stowe.png]]
 #+BEAMER: }
 
 #+BEAMER: \only<5>{
 #+CAPTION: Columnas de Valery Tsimmerman 2006.
 #+ATTR_LATEX: :align center :width 0.3\textwidth
-[[../img/tsimmerman.png]]
+[[../../img/tsimmerman.png]]
 #+BEAMER: }
 
 ** La "clásica": 18 grupos (columnas) y 7 períodos (filas):
 
 #+ATTR_LATEX: :align center :width 0.7\textwidth
-[[../img/pte.png]]
+[[../../img/pte.png]]
 
 ** Algunos apuntes de la TP que debe conocer:
 
 |                        | Nombre               | Bloque |
-|------------------------+----------------------+---|
-| IA                     | Metales Alcalinos    | s |
-| IIA                    | M. Alcalinos Térreos | s |
-| IIIA                   | Boroídeos            | p |
-| IVA                    | Carbonoides          | p |
-| VA                     | Calcógenos           | p |
-| VIA                    | Anfígenos            | p |
-| VIIA                   | Halógenos            | p |
-| 0                      | Gases nobles         | p |
-| Grupos B               | Transición           | d |
-| Grupos A               | Representativos      | sp |
-| Lantánidos y actínidos | Transición interna   | f |
+|------------------------+----------------------+--------|
+| IA                     | Metales Alcalinos    | s      |
+| IIA                    | M. Alcalinos Térreos | s      |
+| IIIA                   | Boroídeos            | p      |
+| IVA                    | Carbonoides          | p      |
+| VA                     | Calcógenos           | p      |
+| VIA                    | Anfígenos            | p      |
+| VIIA                   | Halógenos            | p      |
+| 0                      | Gases nobles         | p      |
+| Grupos B               | Transición           | d      |
+| Grupos A               | Representativos      | sp     |
+| Lantánidos y actínidos | Transición interna   | f      |
 
 ** ¿Qué propiedades de los elementos varían a lo largo y ancho de la Tabla periódica?
 
@@ -657,7 +657,7 @@ Escriba la configuración electrónica completa y los 4 números cuánticos del 
 
 #+CAPTION: Variación en aumento de la EN a lo largo y ancho de la TP
 #+ATTR_LATEX: :align center :width \textwidth
-[[../img/en.jpeg]]
+[[../../img/en.jpeg]]
 
 ** Configuración electrónica y TP
 - Habrá notado que si el elemento posee muchos electrones la configuración electrónica puede tornarse muy larga de escribir, ejemplo:
