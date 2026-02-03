@@ -1,0 +1,545 @@
+% Created 2025-03-09 dom 18:01
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt, aspectratio=169, xcolor=table]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[spanish]{babel}
+\usepackage[version=4]{mhchem}
+\usepackage{ragged2e}
+\renewcommand{\raggedright}{\justifying}
+\usetheme{Berlin}
+\author{Prof. Daniel Muñoz}
+\date{\textit{<2025-03-06 jue>}}
+\title{Química}
+\subtitle{Clase 1.}
+\titlegraphic{\includegraphics[width=4cm]{../img/udplogo}}
+\hypersetup{
+	pdfauthor={Prof. Daniel Muñoz},
+	pdftitle={Química},
+	pdfkeywords={},
+	pdfsubject={},
+	pdfcreator={Emacs 29.4 (Org mode 9.7.22)},
+	pdflang={Spanish}}
+\begin{document}
+
+\maketitle
+\begin{frame}{Outline}
+	\tableofcontents
+\end{frame}
+
+\section{Presentación}
+\label{sec:org93e1c60}
+\begin{frame}[label={sec:orgdde78ec}]{Acerca del Profesor}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\footnotesize
+			\begin{itemize}[<+->]
+				\item Daniel E. Muñoz Masson daniel.munoz3@mail.udp.cl
+				\item Profesor de Química. Uchile
+				\item Mg. en educación c/m Evaluación de Aprendizajes
+				\item Mg. En Ciencias Químicas c/m Fisicoquímica. Uchile
+				\item Analista Data Science con Python. Corfo
+				\item Analista QA en Automatización de Pruebas. Corfo
+				\item Experiencia como: Jefe de Proyectos, Docente, Automatizador, Académico-Investigador.
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\begin{figure}[htbp]
+				\centering
+				\includegraphics[width=0.8\textwidth]{../img/yo.jpg}
+				\caption{\emph{Le Fils de l'Homme} 1964 René Magritte}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:org1905b57}]{Acerca del Curso}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\begin{itemize}
+				\item Clases:
+				      \begin{itemize}
+					      \item I: \textit{<2025-03-06 jue>}
+					      \item F: \textit{<2025-06-27 vie>}
+				      \end{itemize}
+				\item Aprobación:
+				      \begin{itemize}
+					      \item Promedio General => 4.0
+				      \end{itemize}
+				\item Eximición:
+				      \begin{itemize}
+					      \item PG => 5.0
+					      \item Ninguna PS < 4.0
+					      \item Haber rendido todas las S y \alert{TI}
+				      \end{itemize}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\begin{figure}[htbp]
+				\centering
+				\includegraphics[width=0.6\textwidth]{../img/qca1.jpg}
+				\caption{Orbitales del molecular}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:org17cacc8}]{Evaluaciones Sumativas (con nota)}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\begin{itemize}
+				\item Pruebas solemnes (S1 y S2) = 60\%
+				\item Controles (C1, C2, C3, C4) = 10\%
+				\item Trabajo de Integración (Q, OG, VID) = 30\%
+				\item NP = C*10\% + S1*30\% + S2*30\% + TI*30\%
+				\item Examen (Contenido de S1 y S2), reemplaza la peor S en la NF
+				\item NF = NP*70\% + E*30\%
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\begin{figure}[htbp]
+				\centering
+				\includegraphics[width=0.7\textwidth]{../img/chlorophyl.png}
+				\caption{Clorofila y Hemoglobina}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:orgcb0115c}]{Trabajo de integración}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\begin{itemize}
+				\item Trabajo \alert{Grupal} estudio de manuscrito de algún \emph{tema dado}
+				\item Se divide en:
+				      \begin{itemize}
+					      \item Cuestionario (Q): Respuesta a un cuestionario dividido en dos partes. (\emph{Heteroevaluado})
+					      \item Organizador Gráfico (OG): Herramienta visual que sintetiza el \emph{tema dado}. (\emph{Autoevaluado})
+					      \item Presentación Audiovisual (VID): Video que presenta sintéticamente el trabajo de integración (\emph{Coevaluado})
+				      \end{itemize}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\begin{figure}[htbp]
+				\centering
+				\includegraphics[width=0.7\textwidth]{../img/protein.jpg}
+				\caption{Estructura cuaternaria de las proteínas}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:org892e306}]{Bibliografía del curso}
+	\begin{columns}
+		\begin{column}{0.3\columnwidth}
+			\begin{block}{Básica}
+				\begin{thebibliography}{Chang, 2010}
+					\setbeamertemplate{bibliography item}[book]
+					\bibitem[Chang, 2011]{Chang2011}
+					Chang, Raymond
+					\newblock \emph{Fundamentos de Química}
+					\newblock McGraw Hill, 2011
+
+					\setbeamertemplate{biblography item}[book]
+					\bibitem[Chang, 2010]{Chang2010}
+					Chang, Raymond
+					\newblock \emph{Química}, 10° Edición
+					\newblock McGraw Hill, 2010
+				\end{thebibliography}
+			\end{block}
+		\end{column}
+		\begin{column}{0.7\columnwidth}
+			\begin{block}{Complementaria}
+				\begin{thebibliography}{Serway, 2008}
+					\footnotesize
+					\setbeamertemplate{bibliography item}[book]
+					\bibitem[Brown, 2009]{Brown2009}
+					Brown, T.L; LeMay, H.E; Bursten, B.E y col.
+					\newblock \emph{Química: La Ciencia Central}
+					\newblock Pearson, 2009
+
+					\setbeamertemplate{biblography item}[book]
+					\bibitem[Petrucci, 2011]{Petrucci2010}
+					Petrucci, R.H; Herring, F.G; Madura, J.D y Bissonnette, C.
+					\newblock \emph{Química General: Principios y Aplicaciones Modernas} 10° Edición
+					\newblock Pearson, 2011
+					\setbeamertemplate{bibliography item}[book]
+					\bibitem[Serway, 2008]{Serway2008}
+					Serway, R. y Jewett, J.
+					\newblock \emph{Física para Ciencias e Ingeniería}, 7° Edición
+					\newblock Brooks/Cole, 2008
+				\end{thebibliography}
+			\end{block}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:org73574b3}]{Ahora preséntese usted\ldots{}}
+	\begin{center}
+		\includegraphics[height=5cm]{../img/uncleSam.jpg}
+	\end{center}
+\end{frame}
+\section{Configuración electrónica}
+\label{sec:org4302b14}
+\begin{frame}[label={sec:org31f4d27}]{Historia del átomo y el elemento: Demócrito/Aristóteles}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\begin{itemize}[<+->]
+				\item Desde el inicio de los tiempos que la humanidad se ha preguntado \emph{de qué están hecha las cosas}.
+				\item Los primeros avances se registran en la Grecia clásica (400 a.C.) Demócrito de Abdera postuló que las \emph{cosas} está hechas de objetos indivisibles llamados \(\alpha\) (a = sin) y \(\tau\)\textit{o}\(\mu\)\textit{o}\(\nu\) (tomo = división).
+				\item Esta idea fue sometida a la crítica de Aristóteles (350 a.C.), siendo las ideas de este último las que prevalecieron hasta el SXVIII.
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\only<1-2>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.5\textwidth]{../img/democrito.jpg}
+					\caption{Demócrito de Abdera 460 a.C. - 370 a.C.}
+				\end{figure}
+			}
+
+			\only<3>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.5\textwidth]{../img/aristoteles.jpg}
+					\caption{Aristóteles 384 a.C. - 322 a.C.}
+				\end{figure}
+			}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:orge58fed4}]{John Dalton y Michael Faraday}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\footnotesize
+			\begin{itemize}
+				\item John Dalton científico-profesor inglés siguió la posta del desarrollo de la teoría atómica.
+				\item En 1808 en \guillemotleft{}Nuevo Sistema de filosofía química\guillemotright{} menciona: la \emph{materia se compone de partículas atómicas; los átomos de un mismo \guillemotleft{}elemento\guillemotright{} son iguales en su peso y cualidad. Los compuestos nacen por la unión de átomos de dos o más elementos diferentes}.
+				\item En 1883 Michael Faraday otro científico inglés, descubrió que el flujo de corriente eléctrica produce cambios, por tanto sugiere que los átomos deben tener una estructura eléctrica.
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\only<1>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.5\textwidth]{../img/dalton.jpg}
+					\caption{John Dalton 1766 - 1844}
+				\end{figure}
+			}
+
+			\only<2>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[height=0.6\textheight]{../img/dalton-atomic.jpg}
+					\caption{Teoría Atómica de Dalton}
+				\end{figure}
+			}
+
+			\only<3>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.5\textwidth]{../img/faraday.jpg}
+					\caption{Machael Faraday 1791 - 1867}
+				\end{figure}
+			}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:org29bbfba}]{J.J. Thomson}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\begin{itemize}[<+->]
+				\item Joseph John Thomson, científico inglés en 1906 a partir del experimento de los \guillemotleft{}rayos catódicos\guillemotright{}, logra desarrollar el primer modelo atómico con estructura interna a partir de datos experimentales.
+				\item Modelo atómico de Thomson: una base positiva con incrustaciones negativas de partículas subatómicas las cuales nombró como \emph{electrones}.
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\only<1>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.5\textwidth]{../img/thomson.jpg}
+					\caption{J.J. Thomson 1856 - 1940}
+				\end{figure}
+			}
+
+			\only<2>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.7\textwidth]{../img/rayoscatodicos.jpg}
+					\caption{Máquina de rayos catódicos}
+				\end{figure}
+			}
+
+			\only<3>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.6\textwidth]{../img/thomsonmodel.jpeg}
+					\caption{Modelo atómico de Thomson}
+				\end{figure}
+			}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:orge0172ec}]{Ernest Rutherford}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\begin{itemize}[<+->]
+				\item Ernest Rutherford científico inglés en 1911 a partir del experimento de la \guillemotleft{}lámina de oro\guillemotright{} logra descubrir que el átomo en su mayoría es espacio vació.
+				\item Modelo atómico de Rutherford (planetario): un núcleo positivo con electrones orbitando alrededor del núcleo.
+				\item Pero había un problema con este modelo \ldots{}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\only<1>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.5\textwidth]{../img/rutherford.jpg}
+					\caption{Ernest Rutherford 1871 - 1937}
+				\end{figure}
+			}
+
+			\only<2>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.7\textwidth]{../img/goldslide.jpeg}
+					\caption{Experimento de la lámina de oro.}
+				\end{figure}
+			}
+
+			\only<3>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.6\textwidth]{../img/rutherfordmodel.jpeg}
+					\caption{Modelo atómico de Rutherford}
+				\end{figure}
+			}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:orgac9dc89}]{El salto a la mecánica cuántica y la pérdida de las esferas duras.}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\footnotesize
+			\begin{itemize}[<+->]
+				\item Después de Bohr, ingentes científicos hicieron aportes inconmensurables al entendimiento del átomo y del universo subatómico, entre los exponentes más destacados: De Broglie, E. Schrödinger, W. Heisenberg, J. Slater, P. Dirac, W. Pauli, entre otros.
+				\item Esto avances nos llevaron a una interpretación \emph{probabilista} de la \emph{realidad} en contraste con la clásica \emph{causalidad} que imperaba en la física clásica.
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\only<1>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[height=0.6\textheight]{../img/proceres.png}
+					\caption{Collage, diferentes científicos}
+				\end{figure}
+			}
+
+			\only<2>{
+				\huge
+				\begin{itemize}
+					\item \texttimes{} \(A \to B\)
+					\item \(\checkmark\) \(\Psi\)
+				\end{itemize}
+			}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:orgac0438e}]{Niels Bohr y el advenimiento de la mecánica cuántica.}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\footnotesize
+			\begin{itemize}[<+->]
+				\item Niels Bohr, científico danés en 1913 profundiza en el modelo atómica de Rutherford, integrando los incipientes descubrimientos de una nueva física, la física cuántica.
+				\item De los trabajos sobre el modelo atómico de Rutherford, introduce le número cuántico \guillemotleft{}n\guillemotright{} el cuál representaría la órbita del electrón, además concluyendo que no todos los electrones circulan por todas las orbitas, estableciendo que estos saltan de una a otra emitiendo energía.
+				\item Esta interpretación permitió explicar el fenómeno de los espectros atómicos.
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\only<1>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[height=0.6\textheight]{../img/bohr.jpg}
+					\caption{Niels Bohr 1885 - 1962}
+				\end{figure}
+			}
+
+			\only<2>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.7\textwidth]{../img/bohrmodel.png}
+					\caption{Modelo atómico de Bohr.}
+				\end{figure}
+			}
+
+			\only<3>{
+				\begin{figure}[htbp]
+					\centering
+					\includegraphics[width=0.7\textwidth]{../img/espectro.jpeg}
+					\caption{Espectros}
+				\end{figure}
+			}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:org67fbb82}]{Entonces, ¿Como describimos un átomo?}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\begin{itemize}[<+->]
+				\item Un átomo posee:
+				      \begin{itemize}
+					      \item Número atómico; \(Z = \sum p^+\)
+					      \item Número másico; \(A = Z + \sum n^0\)
+					      \item Simbolo atómico
+					      \item Carga; \(Q = Z - \sum e^-\)
+				      \end{itemize}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\huge
+			\centering
+			\ce{^{\textbf<3>{227}}_{\textbf<2>{90}}{\textbf<4>{Th}}^{\textbf<5>{+}}}
+			\vspace{1cm}
+
+			\pause
+
+			\small
+			\(\sum\) p\textsuperscript{+} = Z = 90; \(\sum\) n\textsuperscript{0} = 137; \(\sum\) e\textsuperscript{-} = 89
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:orgbc65b59}]{Configuración electrónica}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\begin{itemize}[<+->]
+				\item La configuración electrónica es la forma en que describimos los electrones de un elemento.
+				\item Esta caracterización de los electrones de un elemento se logra mediante el uso de los llamados \guillemotleft{}números cuánticos\guillemotright{}:
+				      \begin{itemize}
+					      \item Número cuántico principal \alert{n}
+					      \item Número cuántico secundario \alert{l}
+					      \item Número cuántico magnético \alert{m\textsubscript{l}}
+					      \item Número cuántico de espín \alert{m\textsubscript{s}}
+				      \end{itemize}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\begin{center}
+				\includegraphics<1-2>[width=.9\linewidth]{../img/settings.jpeg}
+			\end{center}
+
+			\begin{itemize}
+				\item <3-> Adquiere valores desde \(1, 2, 3 ... \infty\)
+				\item <4-> Adquiere valores desde \(0, 1, 2 ... n-1\)
+				\item <5-> Adquiere valores desde: \(-l, -l+1, -l+2 ... , 0, 1, 2, ... ,+l-1, +l\)
+				\item <6-> Adquiere valores de: \(+\frac{1}{2}, -\frac{1}{2}\)
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:orgc111f66}]{Orbitales atómicos}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\begin{itemize}[<+->]
+				\item Cada valor de l se le asigna una letra:
+				\item Cada combinación de los tres números cuánticos: n, l y m\textsubscript{l} se les llama \emph{orbital atómico}.
+				\item Para combinarlos: se utiliza la notación \(nl_{m_l}\)
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\begin{block}{}
+				\only<1>{
+					\begin{center}
+						\begin{tabular}{rl}
+							l & eq \\
+							\hline
+							0 & s  \\
+							1 & p  \\
+							2 & d  \\
+							3 & f  \\
+							4 & g  \\
+						\end{tabular}
+					\end{center}
+				}
+
+				\only<2->{
+					\begin{center}
+						\begin{tabular}{rrrl}
+							n & l & m\textsubscript{l} & \(\psi\)             \\
+							\hline
+							1 & 0 & 0                  & 1s                   \\
+							2 & 0 & 0                  & 2s                   \\
+							2 & 1 & -1                 & 2p\textsubscript{-1} \\
+							2 & 1 & 0                  & 2p\textsubscript{0}  \\
+							2 & 1 & +1                 & 2p\textsubscript{+1} \\
+						\end{tabular}
+					\end{center}
+
+				}
+			\end{block}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:orgb34869a}]{¿Cómo se construye una CE a partir de los electrones de un átomo?}
+	\begin{columns}
+		\begin{column}{0.5\columnwidth}
+			\begin{itemize}[<+->]
+				\item Se deben seguir ciertas reglas:
+				      \begin{itemize}
+					      \item \emph{Principio de mínima energía}: Los electrones inician con orbitales de menor energía (\(n+l\)) hacia otros de mayor energía
+					      \item \emph{Principio de exclusión de Pauli}: Cada orbital acepta, como máximo, \alert{dos} electrones.
+					      \item \emph{Regla de Hund}: Los electrones van adquiriendo diferentes valores de m\textsubscript{l} para el mismo l antes de repetir.
+				      \end{itemize}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\columnwidth}
+			\begin{figure}[htbp]
+				\centering
+				\includegraphics[width=0.6\textwidth]{../img/dmoeller.jpeg}
+				\caption{Diagrama de Moeller}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}[label={sec:org67836c0}]{Ejercicios:}
+	\begin{block}{Ejercicio 1}
+		Escriba la configuración electrónica completa y los 4 números cuánticos del último electrón para los siguientes átomos:
+		\begin{itemize}
+			\item \ce{_9F}
+			\item \ce{_2He+}
+			\item \ce{_6C}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:orgd17db53}]{Bibliografía}
+	\begin{thebibliography}{Scerri, 2007}
+		\footnotesize
+		\setbeamertemplate{bibliography item}[online]
+		\bibitem[Labnews, 2019]{Labnews2019}
+		Laboratory news
+		\newblock \emph{Alternative periodic tables}
+		\newblock \url{https://www.labnews.co.uk/article/2029799/alternative-periodic-tables}
+
+		\setbeamertemplate{bibliography item}[online]
+		\bibitem[Lifeder, 2022]{Lifeder2022}
+		Lifeder
+		\newblock \emph{Tríadas de Döbereiner}
+		\newblock \url{https://www.lifeder.com/triadas-de-dobereiner/}
+
+		\setbeamertemplate{biblography item}[online]
+		\bibitem[Energía Nuclear, 2023]{Nuclear2023}
+		Energía Nuclear
+		\newblock \emph{Ley de las Octavas de Newlands}
+		\newblock \url{https://energia-nuclear.net/quimica/tabla-periodica/linea-del-tiempo/ley-de-las-octavas}
+		\setbeamertemplate{bibliography item}[book]
+		\bibitem[Scerri, 2007]{Scerri2007}
+		Scerri, Eric.
+		\newblock \emph{The Periodic Table: It's Story and Its Significance}
+		\newblock Oxford University Press, 2007
+	\end{thebibliography}
+\end{frame}
+\end{document}

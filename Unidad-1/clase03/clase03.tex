@@ -1,0 +1,172 @@
+\documentclass[11pt, aspectraio=169, xcolor=table]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage[spanish]{babel}
+\usepackage{pdfrender}
+\usepackage{xcolor}
+\usepackage{ragged2e}
+\renewcommand{\raggedright}{\justifying}
+\usepackage{smartdiagram}
+\usepackage[version=4]{mhchem}
+\usepackage{chemfig}
+
+
+\usetheme{Berlin}
+
+\author{Prof. Daniel Muñoz \
+  \texttt{daniel.munoz3@mail.udp}
+}
+\title{Química}
+\subtitle{Clase 3}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+
+\section{Repaso de Lewis}
+
+\section{Teoría de repulsión de pares de electrones de valencia (TRPEV)}
+
+\begin{frame}{TRPEV}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}[<+->]
+				\item La estructuras de Lewis, si bien son útiles para determinar la unión de elementos y pares electronicos libres, no nos permite, directamente saber la disposición 3D de esta.
+				\item En nuestro auxilio, utilizamos la ``Teoría de repulsión de pares eletronicos enlazantes'' (TRPEV).
+				\item La cual como bien dice su nombre establece que los enlaces en una molécula, buscarán adoptar la mayor distancia entre ellos en un ambiente 3D.
+				\item Esta teoría también se llama teoría de Gilliespie-Nyholm en honor a sus creadores en 1957.
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=0.8\textwidth]{../img/gilliespie.png}
+				\caption{Creadores de la TRPEV}
+			\end{figure}
+		\end{column}
+	\end{columns}
+
+\end{frame}
+
+\section{Identificación de la geometría y polaridad de las moléculas en función de los átomos que la componen según la TRPEV}
+
+\begin{frame}{¿Cómo saber la disposición 3D de una molécula?}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}[<+->]
+				\item Afortunadamente Gilliespie y Nyholm hicieron todos los cálculos por nosotros
+				\item Por tanto solamente necesitamos conocer cómo se ordenan los ligandos alrededor del átomo central para determinar su geometría (disposición 3D)
+			\end{itemize}
+		\end{column}
+		\begin{column}{.5\textwidth}
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=0.7\textwidth]{../img/molview.png}
+				\caption{\url{https://molview.org}}
+			\end{figure}
+
+		\end{column}
+	\end{columns}
+
+\end{frame}
+
+\begin{frame}{Dime tu composición y te diré tu geometría}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}[<+->]
+				\item Para determinar la geometría de la molécula primero utilizaremos el método ABE, AXE, o ALE
+				\item Seguido revisaremos, con este método según la tabla TRPEV que geometría y ángulo de enlace corresponde
+
+			\end{itemize}
+
+
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\begin{block}{Notación ALE}
+				\begin{itemize}
+					\item A = átomo central
+					\item L = Ligando
+					\item E = par electrónico libre del átomo central
+				\end{itemize}
+			\end{block}
+
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{TRPEV}
+
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.4\textwidth]{../img/trpev.png}
+		\caption{\url{https://es.wikipedia.org/wiki/TRePEV}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Polaridad}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			La polaridad de una molécula dependerá de:
+			\begin{itemize}[<+->]
+				\item Su distribución de carga, si es homogénea, será \textit{apolar}
+				\item En caso contrarío será \textit{polar}
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\begin{figure}[ht]
+				\centering
+				\includegraphics<1>[width=0.6\textwidth]{../img/aceite}
+				\includegraphics<2>[width=0.6\textwidth]{../img/agua}
+			\end{figure}
+
+		\end{column}
+	\end{columns}
+
+\end{frame}
+
+\begin{frame}{Análisis de la distribución de carga}
+
+\end{frame}
+
+\section{Predicción del tipo de interacciones intermoleculares}
+
+\begin{frame}{Tipos de interacciones intermoleculares}
+  \begin{columns}
+    \begin{column}{.5\textwidth}
+ 	\begin{itemize}[<+->]
+		\item ion-ion
+		\item ion-diper
+    \item Fuerzas de Van der Waals
+    \begin{itemize}
+		\item diper-diper
+		\item diper-dipin
+		\item Fuerzas de dispersión (London)
+	\end{itemize}
+    \end{itemize}
+    \end{column}
+    \begin{column}{.5\textwidth}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Esto, cómo afecta la formación de las disoluciones en:}
+  \begin{itemize}[<+->]
+	\item la formación de soluciones
+	\item Propiedades físicas.
+	 \begin{itemize}[<+->]
+	\item Solubilidad
+	\item Punto de fusión
+	\item Conductividad eléctrica.
+	 \end{itemize}
+ \end{itemize}
+\end{frame}
+\end{document}

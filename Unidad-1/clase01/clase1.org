@@ -1,0 +1,697 @@
+#+TITLE: Química
+#+SUBTITLE: Clase 1.
+#+AUTHOR: Prof. Daniel Muñoz
+#+DATE: <2025-03-06 jue>
+#+EMAIL: daniel.munoz3@mail.udp.cl
+#+startup: beamer
+#+LANGUAGE: es
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+Latex_CLASS: beamer
+#+Latex_CLASS_OPTIONS: [11pt, aspectratio=169, xcolor=table]
+#+latex_header: \usepackage[spanish]{babel}
+#+LATEX_HEADER: \usepackage[version=4]{mhchem}
+#+LATEX_HEADER: \usepackage{ragged2e}
+#+LATEX_HEADER_EXTRA: \renewcommand{\raggedright}{\justifying}
+#+BEAMER_THEME: Berlin
+#+BEAMER_HEADER: \titlegraphic{\includegraphics[width=4cm]{../img/udplogo}}
+
+* Presentación
+** Acerca del Profesor
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+LATEX: \footnotesize
+#+ATTR_BEAMER: :overlay <+->
+- Daniel E. Muñoz Masson {{{keyword(email)}}}
+- Profesor de Química. Uchile
+- Mg. en educación c/m Evaluación de Aprendizajes
+- Mg. En Ciencias Químicas c/m Fisicoquímica. Uchile
+- Analista Data Science con Python. Corfo
+- Analista QA en Automatización de Pruebas. Corfo
+- Experiencia como: Jefe de Proyectos, Docente, Automatizador, Académico-Investigador.
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+CAPTION: /Le Fils de l'Homme/ 1964 René Magritte
+#+ATTR_LATEX: :align center :width 0.8\textwidth
+[[../img/yo.jpg]]
+
+** Acerca del Curso
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+- Horario: Mar y Jue 11:30 a 12:50
+- Sala: ?
+- Clases:
+  - I: <2025-03-06 jue>
+  - F: <2025-06-27 vie>
+- Aprobación:
+  - Promedio General => 4.0
+- Eximición:
+  - PG => 5.0
+  - Ninguna PS < 4.0
+  - Haber rendido todas las S y *TI*
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+CAPTION: Orbitales del molecular
+#+ATTR_LATEX: :align center :width 0.6\textwidth
+[[../img/qca1.jpg]]
+
+** Evaluaciones Sumativas (con nota)
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+- Pruebas solemnes (S1 y S2) = 60%
+- Controles (C1, C2, C3, C4) = 10%
+- Trabajo de Integración (Q, OG, VID) = 30%
+- NP = C*10% + S1*30% + S2*30% + TI*30%
+- Examen (Contenido de S1 y S2), reemplaza la peor S en la NF
+- NF = NP*70% + E*30%
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+CAPTION: Clorofila y Hemoglobina
+#+ATTR_LATEX: :align center :width 0.7\textwidth
+[[../img/chlorophyl.png]]
+
+** Trabajo de integración
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+- Trabajo *Grupal* estudio de manuscrito de algún /tema dado/
+- Se divide en:
+  - Cuestionario (Q): Respuesta a un cuestionario dividido en dos partes. (/Heteroevaluado/)
+  - Organizador Gráfico (OG): Herramienta visual que sintetiza el /tema dado/. (/Autoevaluado/)
+  - Presentación Audiovisual (VID): Video que presenta sintéticamente el trabajo de integración (/Coevaluado/)
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+CAPTION: Estructura cuaternaria de las proteínas
+#+ATTR_LATEX: :align center :width 0.7\textwidth
+[[../img/protein.jpg]]
+
+** Bibliografía del curso
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.3
+:END:
+
+**** Básica
+#+ATTR_LATEX: :options {Chang, 2010}
+#+BEGIN_thebibliography
+       \setbeamertemplate{bibliography item}[book]
+                \bibitem[Chang, 2011]{Chang2011}
+                Chang, Raymond
+                        \newblock /Fundamentos de Química/
+                        \newblock McGraw Hill, 2011
+
+       \setbeamertemplate{biblography item}[book]
+                \bibitem[Chang, 2010]{Chang2010}
+                Chang, Raymond
+                        \newblock /Química/, 10° Edición
+                        \newblock McGraw Hill, 2010
+#+END_thebibliography
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.7
+:END:
+
+**** Complementaria
+
+#+ATTR_LATEX: :options {Serway, 2008}
+#+BEGIN_thebibliography
+        \footnotesize
+        \setbeamertemplate{bibliography item}[book]
+                \bibitem[Brown, 2009]{Brown2009}
+                Brown, T.L; LeMay, H.E; Bursten, B.E y col.
+                        \newblock /Química: La Ciencia Central/
+                        \newblock Pearson, 2009
+
+        \setbeamertemplate{biblography item}[book]
+                \bibitem[Petrucci, 2011]{Petrucci2010}
+                Petrucci, R.H; Herring, F.G; Madura, J.D y Bissonnette, C.
+                        \newblock /Química General: Principios y Aplicaciones Modernas/ 10° Edición
+                        \newblock Pearson, 2011
+        \setbeamertemplate{bibliography item}[book]
+                \bibitem[Serway, 2008]{Serway2008}
+                Serway, R. y Jewett, J.
+                        \newblock /Física para Ciencias e Ingeniería/, 7° Edición
+                        \newblock Brooks/Cole, 2008
+#+END_thebibliography
+
+** Ahora preséntese usted...
+
+#+ATTR_LATEX: :align center :height 5cm
+[[../img/uncleSam.jpg]]
+
+* Configuración electrónica
+** Historia del átomo y el elemento: Demócrito/Aristóteles
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_BEAMER: :overlay <+->
+- Desde el inicio de los tiempos que la humanidad se ha preguntado /de qué están hecha las cosas/.
+- Los primeros avances se registran en la Grecia clásica (400 a.C.) Demócrito de Abdera postuló que las /cosas/ está hechas de objetos indivisibles llamados \alpha (a = sin) y \tau\omicron\mu\omicron\nu (tomo = división).
+- Esta idea fue sometida a la crítica de Aristóteles (350 a.C.), siendo las ideas de este último las que prevalecieron hasta el SXVIII.
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \only<1-2>{
+#+CAPTION: Demócrito de Abdera 460 a.C. - 370 a.C.
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/democrito.jpg]]
+#+BEAMER: }
+
+#+BEAMER: \only<3>{
+#+CAPTION: Aristóteles 384 a.C. - 322 a.C.
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/aristoteles.jpg]]
+#+BEAMER: }
+
+** John Dalton y Michael Faraday
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_BEAMER: :overlay <+->
+#+LATEX: \footnotesize
+- John Dalton científico-profesor inglés siguió la posta del desarrollo de la teoría atómica.
+- En 1808 en "Nuevo Sistema de filosofía química" menciona: la /materia se compone de partículas atómicas; los átomos de un mismo "elemento" son iguales en su peso y cualidad. Los compuestos nacen por la unión de átomos de dos o más elementos diferentes/.
+- En 1883 Michael Faraday otro científico inglés, descubrió que el flujo de corriente eléctrica produce cambios, por tanto sugiere que los átomos deben tener una estructura eléctrica.
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \only<1>{
+#+CAPTION: John Dalton 1766 - 1844
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/dalton.jpg]]
+#+BEAMER: }
+
+#+BEAMER: \only<2>{
+#+CAPTION: Teoría Atómica de Dalton
+#+ATTR_LATEX: :align center :height 0.6\textheight
+[[../img/dalton-atomic.jpg]]
+#+BEAMER: }
+
+#+BEAMER: \only<3>{
+#+CAPTION: Machael Faraday 1791 - 1867
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/faraday.jpg]]
+#+BEAMER: }
+
+** J.J. Thomson
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_BEAMER: :overlay <+->
+- Joseph John Thomson, científico inglés en 1906 a partir del experimento de los "rayos catódicos", logra desarrollar el primer modelo atómico con estructura interna a partir de datos experimentales.
+- Modelo atómico de Thomson: una base positiva con incrustaciones negativas de partículas subatómicas las cuales nombró como /electrones/.
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \only<1>{
+#+CAPTION: J.J. Thomson 1856 - 1940
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/thomson.jpg]]
+#+BEAMER: }
+
+#+BEAMER: \only<2>{
+#+CAPTION: Máquina de rayos catódicos
+#+ATTR_LATEX: :align center :width 0.7\textwidth
+[[../img/rayoscatodicos.jpg]]
+#+BEAMER: }
+
+#+BEAMER: \only<3>{
+#+CAPTION: Modelo atómico de Rutherford
+#+ATTR_LATEX: :align center :width 0.6\textwidth
+[[../img/thomsonmodel.jpeg]]
+#+BEAMER: }
+
+** Ernest Rutherford
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_BEAMER: :overlay <+->
+- Ernest Rutherford científico inglés en 1911 a partir del experimento de la "lámina de oro" logra descubrir que el átomo en su mayoría es espacio vació.
+- Modelo atómico de Rutherford (planetario): un núcleo positivo con electrones orbitando alrededor del núcleo.
+- Pero había un problema con este modelo ...
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \only<1>{
+#+CAPTION: Ernest Rutherford 1871 - 1937
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/rutherford.jpg]]
+#+BEAMER: }
+
+#+BEAMER: \only<2>{
+#+CAPTION: Experimento de la lámina de oro.
+#+ATTR_LATEX: :align center :width 0.7\textwidth
+[[../img/goldslide.jpeg]]
+#+BEAMER: }
+
+#+BEAMER: \only<3>{
+#+CAPTION: Modelo atómico de Thomson
+#+ATTR_LATEX: :align center :width 0.6\textwidth
+[[../img/rutherfordmodel.jpeg]]
+#+BEAMER: }
+
+** El salto a la mecánica cuántica y la pérdida de las esferas duras.
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+LATEX: \footnotesize
+#+ATTR_BEAMER: :overlay <+->
+- Después de Bohr, ingentes científicos hicieron aportes inconmensurables al entendimiento del átomo y del universo subatómico, entre los exponentes más destacados: De Broglie, E. Schrödinger, W. Heisenberg, J. Slater, P. Dirac, W. Pauli, entre otros.
+- Esto avances nos llevaron a una interpretación /probabilista/ de la /realidad/ en contraste con la clásica /causalidad/ que imperaba en la física clásica.
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \only<1>{
+#+CAPTION: Collage, diferentes científicos
+#+ATTR_LATEX: :align center :height 0.6\textheight
+[[../img/proceres.png]]
+#+BEAMER: }
+
+#+BEAMER: \only<2>{
+#+LATEX: \huge
++ \times $A \to B$
++ \checkmark \Psi
+#+BEAMER: }
+
+** Niels Bohr y el advenimiento de la mecánica cuántica.
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+LATEX: \footnotesize
+#+ATTR_BEAMER: :overlay <+->
+- Niels Bohr, científico danés en 1913 profundiza en el modelo atómica de Rutherford, integrando los incipientes descubrimientos de una nueva física, la física cuántica.
+- De los trabajos sobre el modelo atómico de Rutherford, introduce le número cuántico "n" el cuál representaría la órbita del electrón, además concluyendo que no todos los electrones circulan por todas las orbitas, estableciendo que estos saltan de una a otra emitiendo energía.
+- Esta interpretación permitió explicar el fenómeno de los espectros atómicos.
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \only<1>{
+#+CAPTION: Niels Bohr 1885 - 1962
+#+ATTR_LATEX: :align center :height 0.6\textheight
+[[../img/bohr.jpg]]
+#+BEAMER: }
+
+#+BEAMER: \only<2>{
+#+CAPTION: Modelo atómico de Bohr.
+#+ATTR_LATEX: :align center :width 0.7\textwidth
+[[../img/bohrmodel.png]]
+#+BEAMER: }
+
+#+BEAMER: \only<3>{
+#+CAPTION: Espectros
+#+ATTR_LATEX: :align center :width 0.7\textwidth
+[[../img/espectro.jpeg]]
+#+BEAMER: }
+
+** Entonces, ¿Como describimos un átomo?
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_BEAMER: :overlay <+->
+- Un átomo posee:
+  - Número atómico; $Z = \sum p^+$
+  - Número másico; $A = Z + \sum n^0$
+  - Simbolo atómico
+  - Carga; $Q = Z - \sum e^-$
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \huge
+#+BEAMER: \centering
+#+BEAMER: \ce{^{\textbf<3>{227}}_{\textbf<2>{90}}{\textbf<4>{Th}}^{\textbf<5>{+}}}
+#+BEAMER: \vspace{1cm}
+
+\pause
+
+\small
+\sum p^+ = Z = 90; \sum n^0 = 137; \sum e^- = 89
+
+** Configuración electrónica
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_BEAMER: :overlay <+->
+- La configuración electrónica es la forma en que describimos los electrones de un elemento.
+- Esta caracterización de los electrones de un elemento se logra mediante el uso de los llamados "números cuánticos":
+  - Número cuántico principal *n*
+  - Número cuántico secundario *l*
+  - Número cuántico magnético *m_l*
+  - Número cuántico de espín *m_s*
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_BEAMER: :overlay <1-2>
+[[../img/settings.jpeg]]
+
+- <3-> Adquiere valores desde $1, 2, 3 ... \infty$
+- <4-> Adquiere valores desde $0, 1, 2 ... n-1$
+- <5-> Adquiere valores desde: $-l, -l+1, -l+2 ... , 0, 1, 2, ... ,+l-1, +l$
+- <6-> Adquiere valores de: $\frac{1}{2}, -\frac{1}{2}$
+
+
+** Orbitales atómicos
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_BEAMER: :overlay <+->
+- Cada valor de l se le asigna una letra:
+- Cada combinación de los tres números cuánticos: n, l y m_l se les llama /orbital atómico/.
+- Para combinarlos: se utiliza la notación $nl_{m_l}$
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:BEAMER_ENV: block
+:END:
+
+
+#+BEAMER: \only<1>{
+| l | eq |
+|---+----|
+| 0 | s  |
+| 1 | p  |
+| 2 | d  |
+| 3 | f  |
+| 4 | g  |
+#+BEAMER: }
+
+#+BEAMER: \only<2->{
+| n | l | m_l | \psi    |
+|---+---+-----+---------|
+| 1 | 0 |   0 | 1s      |
+| 2 | 0 |   0 | 2s      |
+| 2 | 1 |  -1 | 2p_{-1} |
+| 2 | 1 |   0 | 2p_{0}  |
+| 2 | 1 |  +1 | 2p_{+1} |
+
+#+BEAMER:}
+
+** ¿Cómo se construye una CE a partir de los electrones de un átomo?
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_BEAMER: :overlay <+->
+- Se deben seguir ciertas reglas:
+  - /Principio de mínima energía/: Los electrones inician con orbitales de menor energía ($n+l$) hacia otros de mayor energía
+  - /Principio de exclusión de Pauli/: Cada orbital acepta, como máximo, *dos* electrones.
+  - /Regla de Hund/: Los electrones van adquiriendo diferentes valores de m_l para el mismo l antes de repetir.
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+CAPTION: Diagrama de Moeller
+#+ATTR_LATEX: :align center :width 0.6\textwidth
+[[../img/dmoeller.jpeg]]
+
+** Ejercicios:
+*** Ejercicio 1
+Escriba la configuración electrónica completa y los 4 números cuánticos del último electrón para los siguientes átomos:
+- \ce{_9F}
+- \ce{_2He+}
+- \ce{_6C}
+
+
+* Tabla periódica y electronegatividad.
+** ¿Qué es la TP? un poco de historia: J. Döbereiner \cite{Lifeder2022}
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+- <1-> J.W. Döbereiner, científico alemán fue el primero que propuso un ordenamiento, las llamadas /triadas/ de elementos.
+- <2-> Descubrió que si se promedian los /pesos equivalentes/ de ciertos elementos (por ejemplo óxidos de...) se obtiene, aproximadamente la masa de un tercer elemento.
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \only<1>{
+#+CAPTION: J.W. Döbereiner 1780-1849
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/dobereiner.jpeg]]
+#+BEAMER: }
+
+#+BEAMER: \only<2>{
+- $SrO = \frac{CaO + BaO}{2} = \frac{59+155}{2} = 107$
+- $Br = \frac{Cl + I}{2} = \frac{35.5+127}{2} = 81,25$
+- $Na = \frac{Li + K}{2} = \frac{7+39}{2} = 23.0$
+#+BEAMER: }
+
+** Un poco de historia. Newlands \cite{Nuclear2023}
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_BEAMER: :overlay <+->
+- J Newlands, químico inglés que desarrollo el primer esbozo de la ley periódica, la ley de las octavas.
+- Se percató que cuando se ordenan los elementos según su peso equivalente hay un incremento aproximado de 7 unidades, y una repetición de sus propiedades químicas cada 8 elementos
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \only<1>{
+#+CAPTION: J. Newlands, químico inglés 1837 - 1898
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/newlands.jpg]]
+#+BEAMER: }
+
+#+BEAMER: \only<2>{
+#+CAPTION: 1864 Publica "On the Law of Octaves"
+#+ATTR_LATEX: :align center :width \textwidth
+[[../img/octavas.jpg]]
+#+BEAMER: }
+
+** Mendeléyev, El padre de la Tabla periódica \cite{Scerri2007}.
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+LATEX: \footnotesize
+#+ATTR_BEAMER: :overlay <+->
+- El padre de la TP y el gran hito fue marcado por el Profesor ruso Dmitri Mendeléyev.
+- Intentando desarrollar de un modelo para enseñar los elementos conocidos hasta la fecha, Mendeléyev encontró ciertas regularidades en los elementos cuando se ordenan por sus masas.
+- Utilizando, esta idea de regularidad (ahora conocida como /ley periódica/), se aventuró a predecir el descubrimiento de varios elementos, entre ellos: Eka-aluminio, Eka-silicio.
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \only<1>{
+#+CAPTION: D. Mendeléyev (1834 - 1907)
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/mendeleev.jpg]]
+#+BEAMER:}
+
+#+BEAMER: \only<2>{
+#+CAPTION: La TP propuesta por Mendeléyev, se pueden apreciar diferentes espacios en vacíos.
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/1TP.png]]
+#+BEAMER:}
+
+#+BEAMER: \only<3>{
+| Propiedad           | Eka-aluminio | Galio       |
+|---------------------+--------------+-------------|
+| Masa                | 68           | 69.723      |
+| Densidad (g/cm³)    | 6.0          | 5.91        |
+| T. Fusión (°C)      | Baja         | 29.76       |
+| Formula del Oxido   | \ce{Ea2O3}   | \ce{Ga2O3}  |
+| Formula del cloruro | \ce{Ea2Cl6}  | \ce{Ga2Cl6} |
+| Presión de vapor    | Volátil      | Volátil     |
+#+BEAMER: }
+
+
+** En la actualidad.
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+ATTR_BEAMER: :overlay <+->
+- Existen muchos Sistemas Periódicos (no todos son tablas).
+- Cada uno de ellos tiene un uso diferente.
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \only<2>{
+#+CAPTION: Espiral de Benfley 1964.
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/benfley.png]]
+#+BEAMER: }
+
+#+BEAMER: \only<3>{
+#+CAPTION: Hidrógeno central de Jeff Morgan.
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/morgan.png]]
+#+BEAMER: }
+
+#+BEAMER: \only<4>{
+#+CAPTION: Capas 3D de Timothy Stowe.
+#+ATTR_LATEX: :align center :width 0.5\textwidth
+[[../img/stowe.png]]
+#+BEAMER: }
+
+#+BEAMER: \only<5>{
+#+CAPTION: Columnas de Valery Tsimmerman 2006.
+#+ATTR_LATEX: :align center :width 0.3\textwidth
+[[../img/tsimmerman.png]]
+#+BEAMER: }
+
+** La "clásica": 18 grupos (columnas) y 7 períodos (filas):
+
+#+ATTR_LATEX: :align center :width 0.7\textwidth
+[[../img/pte.png]]
+
+** Algunos apuntes de la TP que debe conocer:
+
+|                        | Nombre               | Bloque |
+|------------------------+----------------------+---|
+| IA                     | Metales Alcalinos    | s |
+| IIA                    | M. Alcalinos Térreos | s |
+| IIIA                   | Boroídeos            | p |
+| IVA                    | Carbonoides          | p |
+| VA                     | Calcógenos           | p |
+| VIA                    | Anfígenos            | p |
+| VIIA                   | Halógenos            | p |
+| 0                      | Gases nobles         | p |
+| Grupos B               | Transición           | d |
+| Grupos A               | Representativos      | sp |
+| Lantánidos y actínidos | Transición interna   | f |
+
+** ¿Qué propiedades de los elementos varían a lo largo y ancho de la Tabla periódica?
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+BEAMER: \footnotesize
+#+ATTR_BEAMER: :overlay <+->
+- Existen muchas propiedades que varían a lo largo y ancho de la TP, a esas propiedades se les conoce como /Propiedades periódicas/.
+- En este curso solamente estudiaremos la /Electronegatividad/.
+- Electronegatividad: Tendencia de un elemento para atraer electrones [en un enlace].
+- Existen, principalmente, dos escalas de electronegatividad, de Mulliken y Pauli. Usaremos la escala de Pauli la cual toma valores desde: 0,7 a 4 (sin unidades)
+
+*** :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.5
+:END:
+
+#+CAPTION: Variación en aumento de la EN a lo largo y ancho de la TP
+#+ATTR_LATEX: :align center :width \textwidth
+[[../img/en.jpeg]]
+
+** Configuración electrónica y TP
+- Habrá notado que si el elemento posee muchos electrones la configuración electrónica puede tornarse muy larga de escribir, ejemplo:
+- \ce{_38Sr} = 1s²2s²2p⁶3s²3p⁶4s²3d^{10}4p⁶5s²
+- En química, los electrones que participan en las reacciones químicas son los del /último nivel/, dichos electrones reciben el nombre de *electrones de valencia* (ev), mientras que los "otros" corresponden al "kernel".
+- Es por ello que para escribir CE que resalten solo a los ev utilizamos el gas noble anterior más próximo para resumir el "kernel" con ello la configuración anterior quedará:
+- \ce{_38Sr} = [Kr]5s²
+
+
+** Bibliografía
+#+ATTR_LATEX: :options {Scerri, 2007}
+#+BEGIN_thebibliography
+        \footnotesize
+        \setbeamertemplate{bibliography item}[online]
+                \bibitem[Labnews, 2019]{Labnews2019}
+                Laboratory news
+                        \newblock /Alternative periodic tables/
+                        \newblock https://www.labnews.co.uk/article/2029799/alternative-periodic-tables
+
+        \setbeamertemplate{bibliography item}[online]
+                \bibitem[Lifeder, 2022]{Lifeder2022}
+                Lifeder
+                        \newblock /Tríadas de Döbereiner/
+                        \newblock https://www.lifeder.com/triadas-de-dobereiner/
+
+        \setbeamertemplate{biblography item}[online]
+                \bibitem[Energía Nuclear, 2023]{Nuclear2023}
+                Energía Nuclear
+                        \newblock /Ley de las Octavas de Newlands/
+                        \newblock https://energia-nuclear.net/quimica/tabla-periodica/linea-del-tiempo/ley-de-las-octavas
+        \setbeamertemplate{bibliography item}[book]
+                \bibitem[Scerri, 2007]{Scerri2007}
+                Scerri, Eric.
+                        \newblock /The Periodic Table: It's Story and Its Significance/
+                        \newblock Oxford University Press, 2007
+
+#+END_thebibliography

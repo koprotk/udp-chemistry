@@ -1,0 +1,314 @@
+\documentclass[11pt, aspectratio=169, xcolor=table]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage[spanish]{babel}
+\usepackage{pdfrender}
+\usepackage{xcolor}
+\usepackage{ragged2e}
+\usepackage[version=4]{mhchem}
+\renewcommand{\raggedright}{\justifying}
+\usepackage{siunitx}
+\usepackage{smartdiagram}
+\usetheme{Berlin}
+
+\author{Prof. Daniel Muñoz \\
+	\texttt{daniel.munoz3@mail.udp}
+}
+\title{Química Unidad 2}
+\subtitle{Química, la ciencia del cambio y las transformaciones en la vida cotidiana}
+
+\begin{document}
+
+\maketitle
+
+\section{Cambios y reacciones químicas}
+\begin{frame}{¿Qué es un cambio químico?}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item Diferencia entre cambio físico y cambio químico
+				\item Evidencias de un cambio químico:
+				      \begin{itemize}[<+->]
+					      \item Cambio de color
+					      \item Formación de gas
+					      \item Liberación o absorción de energía
+					      \item Formación de precipitado
+				      \end{itemize}
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=\textwidth]{../img/fisicovsqco.jpeg}
+				\caption{Diferencia entre cambios físicos y químicos}
+			\end{figure}
+
+		\end{column}
+	\end{columns}
+
+\end{frame}
+
+
+\begin{frame}{Ejemplos de reacciones químicas en la vida cotidiana}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}[<+->]
+				\item Oxidación del hierro
+				\item Digestión de los alimentos
+				\item Combustión de gasolina
+				\item Fotosíntesis
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\includegraphics<1>[width=\textwidth]{../img/oxido.jpeg}
+			\includegraphics<2>[width=0.6\textwidth]{../img/digestion.jpeg}
+			\includegraphics<3>[width=\textwidth]{../img/motor.jpeg}
+			\includegraphics<4>[width=\textwidth]{../img/fotosintesis.jpeg}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+\section{Identificación los componentes de una ecuación química y su representación}
+
+\begin{frame}{Identificación de los componentes de una ecuación química}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}[<+->]
+				\item Representación simbólica de una reacción química
+				\item Elementos clave:
+				      \begin{itemize}
+					      \item Reactantes
+					      \item Productos
+					      \item Coeficientes estequiométricos
+					      \item Estado físico
+				      \end{itemize}
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\begin{figure}[ht]
+				\ce{C6H12O6(s) + 6O2(g) -> 6CO2(g) + 6H2O(l)}
+				\caption{Ejemplo de ecuación química con sus componentes}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Estados físicos en las ecuaciones químicas}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item Indicación de estado físico:
+				      \begin{itemize}[<+->]
+					      \item (s) sólido
+					      \item (l) líquido
+					      \item (g) gas
+					      \item (aq) disolución acuosa
+				      \end{itemize}
+				\item Ejemplo de reacción con diferentes estados
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\begin{figure}[ht]
+				\centering
+				\ce{2K(s) + 2H2O(l) -> 2KOH(aq) + H2(g)}
+				\caption{Estados físicos representados en una ecuación química}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Tipos de reacciones químicas}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item<1-> Reacciones de combinación
+				\item<2-> Reacciones de descomposición
+				\item<3-> Reacciones de desplazamiento
+				\item<4-> Reacciones de doble sustitución
+				\item<5-> Reacciones de combustión
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\setbeamercovered{transparent}
+			\begin{itemize}
+				\item<1-> \ce{A + B -> AB}
+				\item<2-> \ce{AB -> A + B}
+				\item<3-> \ce{AB + C -> AC + B}
+				\item<4-> \ce{AB + CD -> AC + BD}
+				\item<5-> \ce{A + O2 -> CO2 + H2O}
+			\end{itemize}
+			\setbeamercovered{invisible} % Reset to default after
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+\section{Representación de reacciones químicas en una ecuación de reactantes y productos de acuerdo con la ley de conservación de la masa}
+
+\begin{frame}{Antoine Lavoisier (1743 - 1794) y la Ley de Conservación de la Masa}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}[<+->]
+				\item Considerado el "padre de la química moderna".
+				\item Formuló la ley de conservación de la masa en el siglo XVIII.
+				\item Realizó experimentos de combustión y calcinación.
+				\item Demostró que la materia no se crea ni se destruye, solo se transforma.
+			\end{itemize}
+		\end{column}
+		\begin{column}{.5\textwidth}
+			\begin{figure}[ht]
+				\centering
+				\includegraphics[width=\textwidth]{../img/lavoisier.jpeg}
+				\caption{Antoine Lavoisier y esquema de su experimento sobre la conservación de la masa.}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+\begin{frame}{Balanceo de ecuaciones químicas}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}[<+->]
+				\item Reglas del balanceo:
+				      \begin{itemize}[<+->]
+					      \item Contar átomos en reactantes y productos
+					      \item Ajustar coeficientes
+					      \item Verificar la conservación de la masa
+				      \end{itemize}
+				\item Ejemplo paso a paso
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\begin{block}{Balanceo de la formación de agua \\ \ce{H2(g) + O2(g) -> H2O(l)}}
+				\begin{enumerate}[<+->]
+					\item H:2|2; O:2|1
+					\item \ce{2H2(g) + O2(g) -> 2H2O(l)}
+					\item H:4|4; O:2|2
+				\end{enumerate}
+			\end{block}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Métodos de balanceo de ecuaciones}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}[<+->]
+				\item Método de tanteo (anterior)
+				\item Método algebraico (ejemplo)
+				\item Método de óxido-reducción (redox) (Unidad 4)
+			\end{itemize}
+		\end{column}
+		\begin{column}{.5\textwidth}
+			\ce{FeS2(s) + O2(g) -> Fe2O3(s) + SO2(s)}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Ejercicios de Balance de ecuaciones}
+	\begin{enumerate}
+		\item \ce{Cr + O2 -> Cr2O3}
+		\item \ce{MgS + AlCl3 -> MgCl2 + Al2S3}
+		\item \ce{K + H2O -> KOH + H2}
+		\item \ce{LiI + AgNO3 -> LiNO3 + AgI}
+		\item \ce{Mg + HNO3 -> Mg(NO3)2 + H2O + N2 + O2}
+		\item \ce{KClO3 -> KCl + O2}
+		\item \ce{BaCl2 + NaSO4 -> NaCl + BaSO4}
+		\item \ce{Fe + HBr -> FeBr3 + H2}
+		\item \ce{KClO3 -> KClO4 + KCl + O2}
+	\end{enumerate}
+
+\end{frame}
+
+\section{Definición concepto mol, masa molar y número de Avogadro}
+
+\begin{frame}{Historia del mol y del $N_A$}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}[<+->]
+				\footnotesize
+				\item 1811 Primer acercamiento, \textit{Volumenes iguales de gases a la misma temperatura poseen el mismo número de moléculas}.
+				\item 1865 Johann Josef Lischmidt llegó a un número de moléculas para un gas a 0ºC, 1 atm.
+				\item 1893 Wilhelm Ostwald propone el \textit{mol} como unidad de cantidad de partículas.
+				\item 1971 Finalmente en el SXX se determina un valor el cual es admitido como unidad del SI; \num{6,022e23}
+				\item 2019 Se fija el valor del mol a \num{6,02214076e23}
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\begin{figure}[ht]
+				\centering
+				\includegraphics<1>[width=.5\textwidth]{../img/avogadro.jpg}
+				\includegraphics<2>[width=.4\textwidth]{../img/loschmidt.jpg}
+				\includegraphics<3>[width=.5\textwidth]{../img/ostwald.jpg}
+				\includegraphics<4-5>[width=.5\textwidth]{../img/siu.png}
+				\caption{
+					\only<1>{Amadeo Avogadro, científico italiano 1776 - 1856}
+					\only<2>{Johan Lischmidt, científico checo 1821 - 1895}
+					\only<3>{Wilhelm Ostwald, científico ruso-aleman 1853 - 1932}
+					\only<4-5>{Sistema Internacional de Unidades}
+				}
+			\end{figure}
+
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Cálculos con mol}
+	\begin{columns}
+		\begin{column}{.5\textwidth}
+			\begin{itemize}[<+->]
+				\item Actualmente el mol es aceptado como la única unidad de ``cantidad de materia''
+				\item El número de moles ($n$), mediante los cálculos adecuados, se puede convertir en:
+				      \begin{itemize}[<+->]
+					      \item Masa
+					      \item Volumen (a CNPT)
+					      \item Cantidad de átomos, moléculas, iones, etc.
+				      \end{itemize}
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.5\textwidth}
+			\begin{itemize}
+				\item<3-> $m = MM \times n$
+				\item<4-> $V = n \times \qty{22,4}{\liter}$
+				\item<5-> $n_a = n \times N_A$
+			\end{itemize}
+
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\section{Cálculo de equivalentes estequiométricos del mol de sustancia en otras unidades (cantidad de átomos, moléculas y partículas)}
+
+\begin{frame}{Ejercicios}
+	\begin{enumerate}
+		\item Calcular el peso molecular (MM) del hidróxido de calcio \ce{Ca(OH)2}
+		\item ¿Cuanto masa en gramos 5 moles de ácido nitrico \ce{HNO3}?
+		\item ¿Cuantos átomos de nitrógeno habrán en \qty{68}{g} de amoniaco \ce{NH3}?
+		\item ¿Qué cantidad de moléculas de oxigeno habrá en \qty{6}{L} a CNPT?
+		\item ¿Cuántos átomos habrán en \qty{46}{g} de nitrógeno \ce{N2}?
+		\item Calcular la cantidad de gramos de oxido de sodio (\ce{Na2O}) que se formara a partir de \qty{42}{g} de sodio (Na).
+		\item Un hidrocarburo que contiene 92.3\% de C y 7,74\% de H tiene una masa molar aproximada de \qty{79}{\gram\per\mol} ¿Cuál es su fórmula molécular?
+	\end{enumerate}
+\end{frame}
+
+\section{Desarrollo de cálculos empleando las relaciones estequiométricas}
+
+\begin{frame}{Densidad}
+  \begin{block}{Ejemplo}
+	Para la reacción \ce{Zn + 2HCl -> ZnCl2 + H2} Se desea generar \qty{3,36}{L} de hidrógeno (\ce{H2}) a condiciones normales (CN). ¿Cuántos mL de ácido clorhídrico (densidad = 1,19 g/mL) se necesitan, si el rendimiento es del 80\%?
+  \end{block}
+\end{frame}
+\end{document}
