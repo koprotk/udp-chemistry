@@ -2,4 +2,4 @@
 #+AUTHOR: Daniel Muñoz
 #+EMAIL: daniel.munoz3@mail.udp.cl
 
-Material for Chemistry course for Engineers at UDP. Every unit contain the full presentation of the unit in ~pdf~ format and the ~tex~ file related to.
+Material for Chemistry course for Engineers at UDP. Every ~Unidad-X~ folder contains the full presentation of the unit in ~pdf~ format and the ~tex~ file related to.
