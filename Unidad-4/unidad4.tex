@@ -10,9 +10,20 @@
 \usepackage{ragged2e}
 \usepackage[version=4]{mhchem}
 \usepackage{siunitx}
+\usepackage{amsmath}
 \renewcommand{\raggedright}{\justifying}
 \usepackage{smartdiagram}
 \usetheme{Berlin}
+
+% Start every section with a frame
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
 
 \author{Prof. Daniel Muñoz \\
 	\texttt{daniel.munoz3@mail.udp}.cl
@@ -508,6 +519,108 @@
 
 \end{frame}
 
+
+\section{Concepto de ácidos y bases débiles. Concepto de buffer.}
+
+\begin{frame}
+  \frametitle{Disociación parcial vuelta al concepto de equilibrio: Teoría de Bronsted y Lowry}
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      \begin{itemize}
+              \footnotesize
+        \item Lo que hemos visto hasta ahora son reacciones donde todo los reactantes se transforman en productos
+        \item Pero eso no siempre es así, a veces esto es parcial, lo que significa que no todo el reactante se convierte en producto
+        \item A esto se le llama equilibrio y cuando las especies son ácidos bases se llamará equilibro ácido base y usaremos dos conceptos:
+        \item ``ácido/base fuerte'': Aquella que se disocia \textbf{totalmente} en agua.
+        \item ``ácido/base débil'': Aquella que se disocia \textbf{parcialmente} en agua.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+      \begin{definition}
+        \begin{itemize}
+          \item[$K_a$] \ce{$\underset{\text{ácido}}{\ce{HX}}$ + H2O <--> H3O+ + $\underset{\text{base conjugada}}{\ce{X-}}$}
+          \item[$K_b$] \ce{$\underset{\text{base}}{\ce{CaCO3}}$ + H2O <--> CaO + $\underset{\text{ácido conjugado}}{\ce{H2CO3}}$}
+          \item \textbf{ácido conjugado}: producto de la disociación de un ácido al ceder protón(es).
+          \item \textbf{base conjugada}: producto de la disociación de una base al capturar protón(es).
+        \end{itemize}
+      \end{definition}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Concepto de buffer: Solución amortiguadora}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}[<+->]
+        \item Si tenemos una solución de un ácido y su base conjugada, tendremos lo que se llama una ``solución buffer''.
+        \item La gracia de esta solución es que permite mantener el pH amortiguando cambios por agentes externos.
+        \item Un ejemplo biológico es nuestra sangra, para que el organismo se mantenga sano el pH de la sangre debe estar entre 7.35 y 7.45.
+        \item Entonces, ¿porque no nos enfermamos cuando comémos un limón (pH = 3)?
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      Respuesta:
+      \begin{itemize}[<+->]
+        \footnotesize
+        \item La sangre permite el intercambio de gases en el organismo, pensemos en uno de ellos: \ce{CO2} y su contenido es agua entonces:
+        \item \ce{CO2 + H2O -> H2CO3 <--> H+ + HCO3-}
+        \item Entonces en nuestra sangre tenemos \ce{H2CO3} y \ce{HCO3-}
+        \item Cuando un \ce{H+} entra a nuestra sangre elevando el pH, pasa lo siguiente: \ce{HCO3- + H+ -> H2CO3} impidiendo que H+ actué.
+        \item Por otra parte si un \ce{OH-} entra: \ce{H2CO3 + OH- -> HCO3- + H2O} impidiendo que el \ce{OH-} baje el pH.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\section{Explicar la dureza del agua utilizando KPS.}
+
+\begin{frame}
+  \frametitle{Solubilidad}
+  \begin{columns}
+
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Equilibro de producto de solubilidad}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Los compuestos se pueden disolver hasta cierto punto en una cantidad de solvente, agua.
+        \item Algunos compuestos pueden disolverse más otros.
+        \item En química podemos cuantificar la cantidad de una sal disuelta, supongamos que disolvemos mucho cloruro de plata en agua:
+        \item \ce{AgCl(s) <--> Ag+(aq) + Cl-(aq)}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Lo que tenemos es un equilibrio entre el precipitado que se disuelve y lo disuelto que precipita, dado que ni sólidos ni líquidos puros van el constante de equilibrio esta constante se escribiría como:
+        \item $K_{ps} = [\ce{Ag+}][\ce{Cl-}]$, entonces cualquier cantidad que sea mayor al $K_{ps}$ no se disolverá.
+      \end{itemize}
+      \begin{center}
+      \includegraphics[width=0.5\textwidth]{../img/kps.jpg}
+      \end{center}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+\begin{frame}
+  \frametitle{Dureza del agua}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Relación con el KPS}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ejemplo}
+
+\end{frame}
+
+
 \section{Definición del concepto de equilibrio REDOX}
 
 \begin{frame}[allowdisplaybreaks]
@@ -535,10 +648,10 @@
   \begin{columns}
 	\begin{column}{.5\textwidth}
 	  \begin{itemize}
-\item Químico/Físico Británico, autodidacta.
-\item Estudió junto a Humphry Davy quién hizo grandes aportes al estudio de la electricidad en reacciones químicas.
-\item Con los trabajos que continuó encontró las relaciones entre la cantidad de sustancia y la cantidad de carga eléctrica.
-\item También introdujo los conceptos de reducción, oxidación, cátodo, ánodo, ión, anión, catión.
+        \item Químico/Físico Británico, autodidacta.
+        \item Estudió junto a Humphry Davy quién hizo grandes aportes al estudio de la electricidad en reacciones químicas.
+        \item Con los trabajos que continuó encontró las relaciones entre la cantidad de sustancia y la cantidad de carga eléctrica.
+        \item También introdujo los conceptos de reducción, oxidación, cátodo, ánodo, ión, anión, catión.
 	  \end{itemize}
 	\end{column}
 
@@ -629,102 +742,7 @@
 	\end{exampleblock}
 \end{frame}
 
-\section{Identificación de las semi reacciones de oxidación, reducción empleando tablas de potenciales de reducción estándares}
-
-\begin{frame}[allowdisplaybreaks]
-	\frametitle{Identificación de las semi-reacciones de oxidación y reducción}
-	\begin{columns}
-		\begin{column}{.5\textwidth}
-			\begin{itemize}
-				\small
-				\item Considere la primera reacción del ejemplo anterior.
-				\item \ce{Fe(s) + Cu^{+2}(ac) -> Fe^{+2}(ac) + Cu(s)}
-				\item Si se observa bien, podríamos describir lo que le sucedió al hierro y al cobre fue:
-				\item \ce{Fe -> Fe^{+2} + 2e-} y
-				\item \ce{Cu^{+2} + 2e- -> Cu}
-				\item Las reacciones anteriores se denominan semireacciones de oxidación y reducción respectivamente.
-			\end{itemize}
-		\end{column}
-
-		\begin{column}{.5\textwidth}
-			\begin{block}{Conceptos}
-				\begin{itemize}
-					\item (Agente) reductor
-					\item (Agente) oxidante
-					\item especie oxidada
-					\item especie reducida
-					\item electrones transferidos
-				\end{itemize}
-			\end{block}
-		\end{column}
-	\end{columns}
-\end{frame}
-
-\begin{frame}[allowframebreaks]
-	\frametitle{Ejemplo}
-	Determine: reductor, oxidante, reducida, oxidada, e- transferidos en las siguientes reacciones:
-	\begin{enumerate}
-		\item \ce{4Al + 3O2 -> 2Al2O3}
-		\item \ce{2SO2 + O2 -> SO3}
-		\item \ce{2CuSO4 + 4KI -> 2CuI + I2 + 2K2SO4}
-		\item \ce{H2S + Cl2 -> S + 2HCl}
-		\item \ce{3PbO + 2NH3 -> N2 + 3H2O + 3Pb}
-		\item \ce{3C(s) + 2Fe2O3(s) -> 4Fe(s) + 3CO2(g)}
-		\item \ce{Fe2O3(s) + 2 Al(s) -> Al2O3(s) + 2 Fe(l)}
-		\item \ce{Cr(s) + 2 HCl(aq) -> CrCl2(aq) + H2(g)}
-		\item \ce{SO2(g) + 2 CO(g) -> S(g) + 2 CO2(s)}
-		\item \ce{MnO2(s) + 4 HCl(aq) -> MnCl2(aq) + Cl2(g) + 2 H2O(l)}
-	\end{enumerate}
-\end{frame}
-
-\section{Definición de los conceptos de celdas, cálculo de potenciales normales de reducción y espontaneidad}
-
-\begin{frame}[allowdisplaybreaks]
-	\frametitle{Espontaneidad en una reacción Redox}
-	\begin{columns}
-		\begin{column}{.5\textwidth}
-			\begin{itemize}
-				\item Las reacciones REDOX implican, como bien revisamos anteriormente, transferencia de e-
-				\item Todo flujo de electrones implica un potencial (V) eléctrico $E^{0}_{celda}$.
-				\item Según el potencial de la reacción, llamado potencial de celda tenemos tres valores posibles:
-				      \begin{itemize}
-					      \item $E^{0}_{celda} > 0$: Espontánea
-					      \item $E^{0}_{celda} = 0$: Equilibrio
-					      \item $E^{0}_{celda} < 0$: No espontánea
-				      \end{itemize}
-			\end{itemize}
-		\end{column}
-
-		\begin{column}{.5\textwidth}
-			\begin{block}{Cálculo de potencial}
-				\begin{itemize}
-					\item $E^{0}_{celda} = E^{0}_{cátodo} - E^{0}_{ánodo}$
-					\item $E^{0}_{cátodo}$: Semireacción de reducción.
-					\item $E^{0}_{ánodo}$: Semireacción de oxidación.
-				\end{itemize}
-			\end{block}
-		\end{column}
-	\end{columns}
-\end{frame}
-
-
-
-\begin{frame}[allowframebreaks]
-	\frametitle{Ejemplo}
-	Determine el potencial: cátodo, ánodo, de celda y si será espontánea o no
-	\begin{enumerate}
-		\item \ce{4Al + 3O2 -> 2Al2O3}
-		\item \ce{2SO2 + O2 -> SO3}
-		\item \ce{2CuSO4 + 4KI -> 2CuI + I2 + 2K2SO4}
-		\item \ce{H2S + Cl2 -> S + 2HCl}
-		\item \ce{3PbO + 2NH3 -> N2 + 3H2O + 3Pb}
-		\item \ce{3C(s) + 2Fe2O3(s) -> 4Fe(s) + 3CO2(g)}
-		\item \ce{Fe2O3(s) + 2 Al(s) -> Al2O3(s) + 2 Fe(l)}
-		\item \ce{Cr(s) + 2 HCl(aq) -> CrCl2(aq) + H2(g)}
-		\item \ce{SO2(g) + 2 CO(g) -> S(g) + 2 CO2(s)}
-		\item \ce{MnO2(s) + 4 HCl(aq) -> MnCl2(aq) + Cl2(g) + 2 H2O(l)}
-	\end{enumerate}
-\end{frame}
-
+\section{Interpretación del pH en ejemplos de procesos ambientales y en sistemas biológicos.}
+% TODO
 
 \end{document}

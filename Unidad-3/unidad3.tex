@@ -14,6 +14,15 @@
 \usepackage{smartdiagram}
 \usetheme{Berlin}
 
+% Start every section with a frame
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
 \author{Prof. Daniel Muñoz \\
 	\texttt{daniel.munoz3@mail.udp.cl}
 }
@@ -147,7 +156,7 @@
 \end{frame}
 
 \section[Leyes de los gases]{Leyes de los gases: Boyle, Charles, Gay-Lussac y Avogadro}
-\begin{frame}[allowdisplaybrakes]
+\begin{frame}
   \frametitle{Ley de Boyle-Mariotte}
   \begin{columns}
     \begin{column}{0.5\textwidth}
@@ -306,7 +315,7 @@
       \footnotesize
       Es quizás la aplicación más crítica para salvar vidas. Cuando un sensor detecta una colisión, se activa una reacción química que genera gas nitrógeno (\ce{N2}​) de forma instantánea.
   \begin{itemize}
-    \item \textbf{Química detrás}: Para que el airbag te proteja, debe pasar de un estado sólido (pequeño volumen) a un gas que llene la bolsa (gran volumen) en unos 30 a 50 \unit{\milli\seconds}.
+    \item \textbf{Química detrás}: Para que el airbag te proteja, debe pasar de un estado sólido (pequeño volumen) a un gas que llene la bolsa (gran volumen) en unos 30 a 50 \unit{\milli\second}.
     \item \textbf{Relación}: Al aumentar drásticamente el número de moles (n) de gas dentro de la bolsa, el volumen (V) se expande violentamente para mantener el equilibrio, incluso si la presión externa es constante.
   \end{itemize}
 \end{column}
@@ -413,8 +422,10 @@
   \end{columns}
 \end{frame}
 
+
+
 \begin{frame}
-  \frametitle{Problema: Olla de Presión (Límite de seguridad)}
+  \frametitle{Problema: Olla de Presión (Límite de seguridad)  }
   \justifying
   Una olla de presión contiene aire y vapor a \qty{1}{atm} y \qty{20}{\degreeCelsius}. La válvula de seguridad está diseñada para dispararse cuando la presión llega a \qty{2.5}{atm}. ¿A qué temperatura empezará a liberar vapor la olla?
 \end{frame}
@@ -423,12 +434,60 @@
 \section{Cálculos estequimétricos en gases ideales}
 
 \begin{frame}
+  \frametitle{Ejemplo 1 \cite{LibreTexts2026}}
+  Una muestra de zinc puro con una masa de \qty{5.98}{\gram} se hace reaccionar con exceso de ácido clorhídrico y el gas hidrógeno (seco) se recoge a \qty{25.0}{\degreeCelsius} y \qty{742}{mmHg}. ¿Qué volumen de gas hidrógeno se produciría?, considere la reacción
+  \begin{center}
+    \ce{2HCl(ac) + Zn(s) -> ZnCl2(ac) + H2(g)}
+
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ejemplo 2}
+  Se permite que una masa desconocida de etano reaccione con el exceso de oxígeno y el dióxido de carbono producido se separa y se recoge. Se encuentra que el dióxido de carbono colectado ocupa \qty{11.23}{\litre} en TPN; ¿qué masa de etano había en la muestra original?, considere:
+  \begin{center}
+    \ce{2CH3CH3(g) + 7O2(g) -> 4CO2 (g) + 6H2O(g)}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ejemplo 3}
+  Una bolsa de aire de automóvil requiere aproximadamente \qty{62}{\litre} de gas nitrógeno para inflarse. El gas nitrógeno es producido por la descomposición de azida sódica, de acuerdo con la ecuación que se muestra a continuación:
+  \begin{center}
+    \ce{2 NaN3(s) -> 2Na(s) + 3N2(g)}
+  \end{center}
+  ¿Qué masa de azida sódica es necesaria para producir el volumen requerido de nitrógeno a \qty{25}{\degreeCelsius} y \qty{1}{atm}?
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ejemplo 4}
+  Cuando se calienta \ce{Fe2O3} en presencia de carbono, se produce gas \ce{CO2}, de acuerdo con la ecuación que se muestra a continuación. Se calienta una muestra de \qty{96.9}{\grams} de \ce{Fe2O3} en presencia de exceso de carbono y se recoge el \ce{CO2} producido y se mide a \qty{1}{atm} y \qty{453}{\kelvin}. ¿Qué volumen de \ce{CO2} se observará?
+  \begin{center}
+    \ce{2Fe2O3(s) + 3C(s) -> 4Fe(s) + 3CO2(g)}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ejemplo 5}
+    La reacción de zinc y ácido clorhídrico genera gas hidrógeno, de acuerdo con la ecuación que se muestra a continuación. Se observa una cantidad desconocida de zinc en una muestra para producir \qty{7.50}{\litre} de gas hidrógeno a una temperatura de \qty{404}{\kelvin} y una presión de \qty{1.75}{atm}. ¿Cuántos moles de zinc había en la muestra?
+    \begin{center}
+      \ce{Zn(s) + 2HCl(ac) -> ZnCl2(ac) + H2(g)}
+    \end{center}
+\end{frame}
+
+\begin{frame}
   \frametitle{Bibliografía}
   \begin{thebibliography}{99}
     \setbeamertemplate{bibliography item}[book]
     \bibitem[Chang, 2011]{Chang2011}
     Chang, Raymond
     \newblock \emph{Fundamentos de Química}
+
+    \setbeamertemplate{bibliography item}[online]
+    \bibitem[LibreTexts, 2026]{LibreTexts2026}
+    LibreTexts
+    \newblock \emph{Combinando la Estequiometría y las Leyes de Gas Ideal}
+    \newblock \url{https://espanol.libretexts.org/Bookshelves/Quimica/}
   \end{thebibliography}
 \end{frame}
 
