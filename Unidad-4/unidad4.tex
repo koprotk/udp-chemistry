@@ -576,10 +576,29 @@
 \section{Explicar la dureza del agua utilizando KPS.}
 
 \begin{frame}
-  \frametitle{Solubilidad}
-  \begin{columns}
+  \frametitle{Tipos de disolución}
+    \begin{itemize}
+            \footnotesize
+      \item \textbf{Solución saturada}: Contiene el máximo de soluto que se puede disolver.
+      \item \textbf{Solución insaturada}: Contiene menos del máximo de soluto que se puede disolver.
+      \item \textbf{Solución sobresaturada}: Contiene más del máximo de soluto que se puede disolver (inestable).
+      \item \textbf{Forma con precipitado}: Solución saturada que contiene un exceso de soluto no disuelto (precipitado).
+    \end{itemize}
+    \begin{center}
+      \includegraphics[width=0.6\textwidth]{../img/tipossolucion.png}    
+    \end{center}
+\end{frame}
 
-  \end{columns}
+
+\begin{frame}
+  \frametitle{Solubilidad \cite{Chang2011}}
+      \begin{definition}
+       \textbf{Solubilidad}: Cantidad de soluto máxima que se puede disolver en un solvente a cierta temperatura, tenemos dos formas de medirla:
+        \begin{itemize}
+          \item \textbf{Solubilidad Molar:} moles de soluto en un litro de una disolución saturada (\unit[per-mode = fraction]{\mole\per\litre})
+          \item \textbf{Solubilidad:} gramos de soluto en un litro de una disolución saturada (\unit[per-mode = fraction]{\gram\per\litre})
+        \end{itemize}
+      \end{definition}
 \end{frame}
 
 \begin{frame}
@@ -596,28 +615,40 @@
     \begin{column}{0.5\textwidth}
       \begin{itemize}
         \item Lo que tenemos es un equilibrio entre el precipitado que se disuelve y lo disuelto que precipita, dado que ni sólidos ni líquidos puros van el constante de equilibrio esta constante se escribiría como:
-        \item $K_{ps} = [\ce{Ag+}][\ce{Cl-}]$, entonces cualquier cantidad que sea mayor al $K_{ps}$ no se disolverá.
+        \item $K_{ps} = [\ce{Ag+}][\ce{Cl-}]$
       \end{itemize}
       \begin{center}
       \includegraphics[width=0.5\textwidth]{../img/kps.jpg}
       \end{center}
     \end{column}
   \end{columns}
-
 \end{frame}
+
+\begin{frame}
+  \frametitle{Ejemplo}
+  El producto de solubilidad ($K_{ps}$​) del fluoruro de calcio (\ce{CaF2}​) a \qty{25}{\degreeCelsius} es \num{3.9e-11}. Calcula:
+  \begin{itemize}
+    \item La solubilidad molar (s) del \ce{CaF2} en agua pura.
+    \item La solubilidad en gramos por litro (\unit{\gram\per\litre})
+  \end{itemize}
+  Datos: $MM_{Ca} = \qty{40.08}{\gram\per\mole}$, $MM_{F} = \qty{19,00}{\gram\per\mole}$ 
+\end{frame}
+
+
 \begin{frame}
   \frametitle{Dureza del agua}
+  % TODO
 
 \end{frame}
 
 \begin{frame}
   \frametitle{Relación con el KPS}
-
+  % TODO
 \end{frame}
 
 \begin{frame}
   \frametitle{Ejemplo}
-
+  % TODO
 \end{frame}
 
 
@@ -745,4 +776,13 @@
 \section{Interpretación del pH en ejemplos de procesos ambientales y en sistemas biológicos.}
 % TODO
 
+\begin{frame}
+  \frametitle{Bibliografía}
+  \begin{thebibliography}{99}
+    \setbeamertemplate{bibliography item}[book]
+    \bibitem[Chang, 2011]{Chang2011}
+    Chang, Raymond
+    \newblock \emph{Fundamentos de Química}
+  \end{thebibliography}
+\end{frame}
 \end{document}
