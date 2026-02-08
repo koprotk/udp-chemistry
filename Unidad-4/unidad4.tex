@@ -637,20 +637,46 @@
 
 \begin{frame}
   \frametitle{Dureza del agua}
-  % TODO
-
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item La \textit{dureza} es un concepto que hace referencia a la cantidad de sales disuelta en el agua.
+        \item Mientras más \textit{dura} el agua más sales disuelta, mientras más \textit{blanda}, más ``pura''.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{definition}
+        \begin{center}
+          \textit{Blanda} $\leftarrow$ Dureza $\rightarrow$ \textit{Dura}  
+        \end{center}
+      \end{definition}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Relación con el KPS}
-  % TODO
+  \frametitle{Relación con el KPS y dureza del agua.}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item ¿Cómo podríamos cuantificar la dureza del agua?
+        \item Dado que el agua posee diversas sales disueltas, deberíamos tomar una como parámetro.
+        \item Dentro de las sales más comunes que presenta el agua es el carbonato de calcio (\ce{CaCO3}) principal responsable del ``sarro'' en las teteras.
+        \item La dureza del agua, generalmente, se mide como miligramos de \ca{CaCO3} disueltos en cada litro agua (\unit{\milli\gram\per\litre}).
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      Clasificación del agua según la OMS\footnote{En santiago el valor es de 300 \unit{\milli\gram\per\litre}}:
+      \begin{tabular}{|c|c|} \hline
+        \ce{CaCO3} (\unit{\milli\gram\per\litre}) & Tipo \\ \hline
+        0-60                                                   & Blanda \\
+        61-120                                                        & Moderadamente dura \\
+        121 - 180                                                        & Dura \\
+        > 180                                                        & Muy Dura \\ \hline
+      \end{tabular}
+    \end{column}
+  \end{columns}
 \end{frame}
-
-\begin{frame}
-  \frametitle{Ejemplo}
-  % TODO
-\end{frame}
-
 
 \section{Definición del concepto de equilibrio REDOX}
 
@@ -670,7 +696,6 @@
 			\ce{Zn(ac) + Cu^{+2}(ac) -> Zn^{+2}(ac) + Cu(ac)}
 		\end{column}
 	\end{columns}
-
 \end{frame}
 
 
@@ -689,7 +714,7 @@
 	\begin{column}{.5\textwidth}
 \begin{figure}[ht]
   \centering
-  \includegraphics[height=0.8\textheight]{../img/faraday.jpg}
+  \includegraphics[height=0.6\textheight]{../img/faraday.jpg}
   \caption{1791 - 1867}
 \end{figure}
 
@@ -769,12 +794,103 @@
 			\item \ce{H2S + Cl2 -> S + 2HCl}
 			\item \ce{3PbO + 2NH3 -> N2 + 3H2O + 3Pb}
 		\end{enumerate}
-
 	\end{exampleblock}
 \end{frame}
 
 \section{Interpretación del pH en ejemplos de procesos ambientales y en sistemas biológicos.}
-% TODO
+
+\begin{frame}
+  \frametitle{Lluvia ácida}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item La lluvia tiene un pH $\approx$ 5,6 (ligeramente ácida por el \ce{CO2} atmosférico)
+        \item Pero, actualmente las lluvias tienen un pH $\approx$ 5 ¿Por qué?
+        \item Presencia de \ce{SO2} y \ce{NO2} dada combustión de combustibles fósiles:
+        \item \ce{2SO2 + O2 + H2O -> H2SO4} (ácido sulfúrico)
+        \item \ce{4NO2 + 2H2O + O2 -> 4HNO3} (ácido nítrico)
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Impactos}
+        \begin{itemize}
+          \item Afecta la respiración de peces por daño en branquias
+          \item Moviliza metales tóxicos del sedimento (\ce{Al^{+3}}, \ce{Pb^{+2}})
+          \item Altera reproducción de anfibios
+          \item Lixiviación de nutrientes (\ca{Ca^{+2}}, \ce{Mg^{+2}}, \ce{K+})
+          \item Liberación de \ce{Al^{+3}} tóxico para raíces.
+          \item Muerte de vegetación.
+        \end{itemize}
+      \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Acidificación de los océanos}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item El exceso de \ce{CO2} atmosférico produce acidificación de los océanos.
+        \item \ce{CO2 + H2O -> H2CO3} (ácido carbónico)
+        \item \ce{H2CO3 -> 2H+ + CO3-2}
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{alertblock}{Consecuencias}
+        \begin{itemize}
+          \item Al existir un exceso de \ce{H+} corales y moluscos presentan dificultades para formar sus exoesqueletos, ya que:
+          \item \ce{CaCO3 + 2H+ -> H2CO3 + Ca^{+2}} por lo tanto existe una competencia por el ión carbonato (\ce{CO3^{-2}}) entré el exoesqueleto del molusco (\ce{Ca^{+2}}) y el ácido aportado por el \ce{CO2}
+        \end{itemize}
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Actividad biológica en suelos}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item En general la agricultura necesita de suelos con pH $\approx$ 6,0 a 7,5 
+        \item Cuando el pH del suelo es bajo, < 5.5
+        \item Toxicidad por aluminio
+        \item Baja disponibilidad de P, Ca y Mg.
+        \item actividad microbiana reducida
+        \item Para solucionarlo, adición \ce{CaCO3} al suelo
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Cuando el pH es alto, > 8.0
+        \item Baja disponibilidad de Fe, Mn, Zn
+        \item Problemas de absorción de nutrientes
+        \item Para solucionarlo, adición de azufre.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{pH y actividad enzimática}
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      \begin{itemize}
+        \item Las enzimas son proteínas que permiten que ocurran o no ciertas reacciones en los organismos vivos, sin ellas la vida no sería posible
+        \item Cada enzima debe tener su pH óptimo, lejos de ese pH la enzima no trabaja.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+      \begin{tabular}{|c|c|c|} \hline
+        Enzima & Ubicación & pH óptimo \\ \hline
+        Pepsina & Estómago & 2.0 \\
+        Tripsina  & Intestino Delgado & 8.0 \\
+        Amilasa Salibal & Boca & 6.8 \\ \hline
+      \end{tabular}
+    \end{column}
+  \end{columns}
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Bibliografía}
